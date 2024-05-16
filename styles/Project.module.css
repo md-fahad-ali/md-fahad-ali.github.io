@@ -1,0 +1,33 @@
+.project {
+    filter: grayscale(1);
+    mix-blend-mode: screen;
+}
+
+.project:hover {
+    color: transparent;
+    /* border-width: 0.5px; */
+    filter: grayscale(0);
+    mix-blend-mode: normal;
+    border-style: solid;
+    /* border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
+}
+
+.divArrow {
+    position: fixed !important;
+    left: 45vw;
+    color: white;
+    top: calc(100vh - 60px);
+}
+
+/* .divArrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+} */

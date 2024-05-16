@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Cryptoquest.net",
+    "image": "/projects/cryptoquest.png",
+    "tags": [
+      "Threejs",
+      "React-Three-Fiber",
+      "React",
+      "Tailwind CSS",
+      "CalenderSetup"
+    ],
+    "description": "This is a Crypto Marketing Agency site.I also added here backend and mail service ",
+    "link": "https://cryptoquest.net"
+  },
+  {
+    "name": "Mclearn P1 Website",
+    "image": "/projects/car.png",
+    "tags": ["Threejs", "React-Three-Fiber", "React", "Tailwind CSS"],
+    "description": "This is a React three fiber based landing page ",
+    "link": "https://mclearn-p1-3d-car-website.vercel.app"
+  },
+  {
+    "name": "Eshop ",
+    "image": "/projects/eshop.png",
+    "tags": ["React", "Next.JS", "ExpressJS", "MongoDB"],
+    "description": "This is a Next.JS based Ecommerce application",
+    "link": "http://eshop-online.vercel.app"
+  },
+  {
+    "name": "Shebapoint",
+    "image": "/projects/shebapoint.png",
+    "tags": ["React", "Tailwind CSS", "Gsap"],
+    "description": "This is a Next.JS agency website demo.Also I used here GSAPfor scroll animation ",
+    "link": "https://shebapoint.vercel.app"
+  }
+]
