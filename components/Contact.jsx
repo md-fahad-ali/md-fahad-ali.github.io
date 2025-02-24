@@ -17,6 +17,7 @@ export default function Contact() {
           style={{
             border: "3px solid white",
           }}
+          
           priority
           loading="eager"
           alt="Md.Fahad Ali"
