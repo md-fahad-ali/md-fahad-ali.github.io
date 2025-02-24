@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { ProgressBar } from "./ProgressBar";
+import { VT323 } from "next/font/google";
 
+const vt323 = VT323({
+  weight: "400",
+  subsets: ["latin"],
+});
 const TypingEffect = (props) => {
   const [typingStatus, setTypingStatus] = useState(false);
   const [typingStatus2, setTypingStatus2] = useState(false);
@@ -15,7 +20,7 @@ const TypingEffect = (props) => {
       try {
         for (let i = 0; i < 100; i++) {
           setIndex(i);
-          await new Promise((resolve) => setTimeout(resolve, 50));
+          await new Promise((resolve) => setTimeout(resolve, 5)); // Reduced delay for faster loading
         }
         console.log("Loading complete!");
         setLoading(true);
@@ -33,23 +38,24 @@ const TypingEffect = (props) => {
         style={{
           whiteSpace: "pre-line",
           fontWeight: "bold",
-          fontFamily: "monospace",
+          fontFamily: vt323.style.fontFamily,
           color: "white",
           display: "block",
           fontSize: "1.5em",
         }}
         sequence={[
           `Hello, I am Md.Fahad Ali \n I am a Full stack developer`,
-          10,
+          100, // Slowed typing speed for slower typing
           () => {
             setTypingStatus(true);
           },
-          10,
+          100, // Slowed typing speed for slower typing
         ]}
         repeat={false}
         wrapper="span"
         className={`type`}
         cursor={true}
+        speed={100} // Increased typing speed
       />
       <style global jsx>
         {`
@@ -57,7 +63,7 @@ const TypingEffect = (props) => {
             content: "|";
             color: white;
             display: ${typingStatus ? "none" : ""};
-            animation: cursor 1.1s infinite step-start;
+            animation: cursor 0.5s infinite step-start; // Increased cursor speed for faster typing
           }
           @keyframes cursor {
             50% {
@@ -72,7 +78,7 @@ const TypingEffect = (props) => {
             whiteSpace: "pre-line",
             height: "100px",
             fontWeight: "bold",
-            fontFamily: "monospace",
+            fontFamily: vt323.style.fontFamily,
             color: "white",
             display: "block",
             paddingBottom: "10px",
@@ -80,16 +86,17 @@ const TypingEffect = (props) => {
           }}
           sequence={[
             `I am From Bangladesh.I have an year of experience in developing Web Applications.`,
-            10,
+            100, // Slowed typing speed for slower typing
             () => {
               setTypingStatus2(true);
             },
-            10,
+            100, // Slowed typing speed for slower typing
           ]}
           repeat={false}
           wrapper="span"
           className={`type`}
           cursor={true}
+          speed={100} // Increased typing speed
         />
       )}
       <style global jsx>
@@ -98,7 +105,7 @@ const TypingEffect = (props) => {
             content: "|";
             color: white;
             display: ${typingStatus ? "none" : ""};
-            animation: cursor 1.1s infinite step-start;
+            animation: cursor 0.5s infinite step-start; // Increased cursor speed for faster typing
           }
           @keyframes cursor {
             50% {
@@ -112,7 +119,7 @@ const TypingEffect = (props) => {
           style={{
             whiteSpace: "pre-line",
             height: "100px",
-            fontFamily: "monospace",
+            fontFamily: vt323.style.fontFamily,
             color: "white",
             display: "block",
             fontSize: "1.5em",
@@ -120,16 +127,17 @@ const TypingEffect = (props) => {
           }}
           sequence={[
             `\n Hey wanted to know more about me`,
-            1000,
+            500, // Reduced delay for faster typing
             () => {
               setTypingStatus3(true);
             },
-            1000,
+            500, // Reduced delay for faster typing
           ]}
           repeat={false}
           wrapper="span"
           className="type2"
           cursor={true}
+          speed={100} // Increased typing speed
         />
       )}
 
@@ -138,7 +146,7 @@ const TypingEffect = (props) => {
           .type2::after {
             content: "|";
             color: white;
-            animation: cursor 1.1s infinite step-start;
+            animation: cursor 0.5s infinite step-start; // Increased cursor speed for faster typing
           }
           @keyframes cursor {
             50% {
@@ -159,7 +167,9 @@ const TypingEffect = (props) => {
                     "border border-white p-5 flex justify-center flex-col w-[70vmin] sm:w-[max(20vmax,25vmax)]"
                   }
                 >
-                  <h1 style={{ fontFamily: "monospace" }}>Press Enter</h1>
+                  <h1 style={{ fontFamily: vt323.style.fontFamily }}>
+                    Press Enter
+                  </h1>
                   <br />
                   <button
                     className="text-white border px-5 py-2"

@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-import { Roboto_Mono } from "next/font/google";
-import { ProgressBar } from "./ProgressBar";
+import { VT323 } from "next/font/google";
+
+const vt323 = VT323({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const TypingEffect = (props) => {
   const [typingStatus, setTypingStatus] = useState(false);
@@ -32,11 +36,12 @@ const TypingEffect = (props) => {
     <div className={" p-9"}>
       <TypeAnimation
         style={{
-          whiteSpace: "pre-line",
+          whiteSpace: "none",
           fontWeight: "bold",
-          fontFamily: "monospace",
+          fontFamily: vt323.style.fontFamily,
           color: "white",
           display: "block",
+          fontSize: "0.5em",
         }}
         sequence={[
           `Hello, I am Md.Fahad Ali \n I am a Full stack developer`,
@@ -49,6 +54,7 @@ const TypingEffect = (props) => {
         wrapper="span"
         className={`type`}
         cursor={true}
+        speed={100} // Increased typing speed
       />
       <style global jsx>
         {`
@@ -70,7 +76,7 @@ const TypingEffect = (props) => {
           style={{
             whiteSpace: "pre-line",
             height: "100px",
-            fontFamily: "monospace",
+            fontFamily: vt323.style.fontFamily,
             color: "white",
             display: "block",
             fontSize: "0.5em",
@@ -87,6 +93,7 @@ const TypingEffect = (props) => {
           wrapper="span"
           className="type2"
           cursor={true}
+          speed={100} // Increased typing speed
         />
       )}
       <style global jsx>

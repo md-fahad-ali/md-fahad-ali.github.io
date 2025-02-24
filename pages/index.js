@@ -9,20 +9,19 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import * as THREE from "three";
 import { getProject } from "@theatre/core";
-
-// import studio from '@theatre/studio'
-// import extension from '@theatre/r3f/dist/extension'
 import { editable as e, SheetProvider } from "@theatre/r3f";
 import { PerspectiveCamera } from "@theatre/r3f";
 import demoProjectState from "./animations/state.json";
 import demoState from "./animations/cube2.json";
 import Image from "next/image";
 import Mytag from "@/components/Headers";
-import Lottie from "lottie-react";
 import animation from "../pages/projects/animation.json";
 import Link from "next/link";
 
 // import styles from "@/styles/Project.module.css";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 // const CameraScene = (props) => {
 

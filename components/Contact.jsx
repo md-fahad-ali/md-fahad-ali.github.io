@@ -26,7 +26,7 @@ export default function Contact() {
         <div className="flex w-[8%] top-2 relative left-3 flex-col">
           <h1 className="font-bold text-xl relative left-0 mb-2">Contact</h1>
 
-          <Link href={"mailto:someone@example.com"}>
+          <Link href={"mailto:fahad288ali@gmail.com"}>
             <div
               className="sm:w-[100px] md: relative md: left-[14px] w-auto flex items-center justify-center"
               style={{
