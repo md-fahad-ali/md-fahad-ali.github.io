@@ -7,12 +7,12 @@
       "ShadCDN",
       "React",
       "Tailwind CSS",
-      "SSLCOMERZ in upcomming update"
+      "SSLCOMERZ in upcoming update"
     ],
-    "description": "This is a Course Selling Marketplace where we help students to find their goal and teach them by selling course",
+    "description": "This is a Course Selling Marketplace where we help students to find their goal and teach them by selling courses.",
     "link": "https://biddarthi.org"
-  }, 
-    {
+  },
+  {
     "name": "Turf Management System",
     "image": "/projects/turf.png",
     "tags": [
@@ -20,12 +20,12 @@
       "Postgresql",
       "React",
       "Expressjs",
-      "Tailwind CSS",
+      "Tailwind CSS"
     ],
     "description": "Book a turf to host tournaments or friendly matches at your preferred time.",
     "link": "Under construction"
   },
-    {
+  {
     "name": "Simple Chat App",
     "image": "/projects/chat.png",
     "tags": [
@@ -36,10 +36,9 @@
       "Tailwind CSS",
       "Socket.iO"
     ],
-    "description": "This is a socket based chat application ,Here you can send emoji chat app .In future I will implement better security and WebRTC so anybody can call someone.",
+    "description": "This is a socket-based chat application where you can send emoji chats. In the future, I will implement better security and WebRTC so anybody can call someone.",
     "link": "https://simple-chat-app-1.onrender.com/"
   },
-  
   {
     "name": "Cryptoquest.net",
     "image": "/projects/cryptoquest.png",
@@ -48,30 +47,30 @@
       "React-Three-Fiber",
       "React",
       "Tailwind CSS",
-      "CalenderSetup"
+      "CalendarSetup"
     ],
-    "description": "This is a Crypto Marketing Agency site.I also added here backend and mail service ",
+    "description": "This is a Crypto Marketing Agency site. I also added backend and mail service.",
     "link": "https://cryptoquest.net"
   },
   {
     "name": "Mclearn P1 Website",
     "image": "/projects/car.png",
     "tags": ["Threejs", "React-Three-Fiber", "React", "Tailwind CSS"],
-    "description": "This is a React three fiber based landing page ",
+    "description": "This is a React three fiber based landing page.",
     "link": "https://mclearn-p1-3d-car-website.vercel.app"
   },
   {
-    "name": "Eshop ",
+    "name": "Eshop",
     "image": "/projects/eshop.png",
     "tags": ["React", "Next.JS", "ExpressJS", "MongoDB"],
-    "description": "This is a Next.JS based Ecommerce application",
+    "description": "This is a Next.JS based Ecommerce application.",
     "link": "http://eshop-online.vercel.app"
   },
   {
     "name": "Shebapoint",
     "image": "/projects/shebapoint.png",
     "tags": ["React", "Tailwind CSS", "Gsap"],
-    "description": "This is a Next.JS agency website demo.Also I used here GSAPfor scroll animation ",
+    "description": "This is a Next.JS agency website demo. Also, I used GSAP for scroll animation.",
     "link": "https://shebapoint.vercel.app"
   }
 ]
