@@ -46,9 +46,7 @@ export default function Contact() {
             <Link href={"https://www.facebook.com/i.me.fahad.ali"}>
               <FaFacebookSquare className="text-3xl" />
             </Link>
-            <Link href={"https://twitter.com/FahadAl40129449"}>
-              <FaSquareXTwitter className="text-3xl" />
-            </Link>
+           
           </div>
         </div>
       </div>
