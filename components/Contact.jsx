@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import React from "react";
-import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
+import { FaLinkedin, FaFacebookSquare,FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
