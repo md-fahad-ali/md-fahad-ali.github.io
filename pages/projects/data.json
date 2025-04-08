@@ -1,5 +1,46 @@
 [
   {
+    "name": "Biddarthi.org",
+    "image": "/projects/biddarthi.png",
+    "tags": [
+      "NextJs",
+      "ShadCDN",
+      "React",
+      "Tailwind CSS",
+      "SSLCOMERZ in upcomming update"
+    ],
+    "description": "This is a Course Selling Marketplace where we help students to find their goal and teach them by selling course",
+    "link": "https://biddarthi.org"
+  }, 
+    {
+    "name": "Turf Management System",
+    "image": "/projects/turf.png",
+    "tags": [
+      "NextJs",
+      "Postgresql",
+      "React",
+      "Expressjs",
+      "Tailwind CSS",
+    ],
+    "description": "Book a turf to host tournaments or friendly matches at your preferred time.",
+    "link": "Under construction"
+  },
+    {
+    "name": "Simple Chat App",
+    "image": "/projects/chat.png",
+    "tags": [
+      "NextJs",
+      "MongoDB",
+      "React",
+      "Expressjs",
+      "Tailwind CSS",
+      "Socket.iO"
+    ],
+    "description": "This is a socket based chat application ,Here you can send emoji chat app .In future I will implement better security and WebRTC so anybody can call someone.",
+    "link": "https://simple-chat-app-1.onrender.com/"
+  },
+  
+  {
     "name": "Cryptoquest.net",
     "image": "/projects/cryptoquest.png",
     "tags": [
